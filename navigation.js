@@ -13,7 +13,7 @@ function closeMenu(afterClose) {
     menu.close();
     closing = false;
     if (afterClose) afterClose();
-  }, reducedMotion.matches ? 0 : 240);
+  }, reducedMotion.matches ? 0 : 460);
 }
 menu.addEventListener('close', () => {
   clearTimeout(closeTimer);
