@@ -43,3 +43,11 @@ section[id],footer[id] { scroll-margin-top:90px; }
 @media(prefers-reduced-motion:reduce) {
  .mobile-menu,.mobile-menu::backdrop,.menu-link,.menu-close { transition:none!important; }
 }
+
+/* Rebalance the hero after removing the location and availability line. */
+.hero { padding-top:48px; }
+.hero h1 { margin-top:20px; }
+@media(max-width:800px) {
+ .hero { min-height:calc(100svh - 78px); padding-top:32px; padding-bottom:48px; }
+ .hero h1 { margin-top:0; }
+}
